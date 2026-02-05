@@ -3,7 +3,7 @@
 A simple console-based project written in C that manages student records using file handling.  
 I built this to practice C fundamentals like structures, binary file I/O, and basic CRUD operations.
 
-The program stores each student’s roll number, name, and marks in a binary file (`student.dat`) so the data stays even after closing the program.
+The program stores each student's roll number, name, and marks in a binary file (`student.dat`) so the data persists even after closing the program.
 
 ---
 
@@ -33,15 +33,15 @@ This project helped me understand:
 ---
 
 ## 📂 Folder Structure
-
+```
 StudentRecordSystem/
 │
-├── main.c # complete source code
-├── student.dat # auto-created at runtime
-└── README.md # documentation
+├── main.c           # complete source code
+├── student.dat      # auto-created at runtime
+└── README.md        # documentation
+```
 
-
-(`student.dat` is optional to upload—recommended to ignore it)
+*(`student.dat` is optional to upload—recommended to ignore it)*
 
 ---
 
@@ -67,34 +67,53 @@ Copy everything except the target record to `temp.dat`, then replace the origina
 ## ▶️ How to Compile and Run
 
 ### Windows:
+```bash
 gcc main.c -o student
 student
-
+```
 
 ### Linux / Mac:
+```bash
 gcc main.c -o student
 ./student
-
+```
 
 ---
 
 ## 📸 Sample Menu Output
-
+```
 ===== Student Record Management =====
+1. Add Student
+2. Display Students
+3. Search Student
+4. Update Student
+5. Delete Student
+6. Exit
 
-Add Student
+Enter your choice: 
+```
 
-Display Students
+---
 
-Search Student
+## 🎯 Features Overview
 
-Update Student
+| Feature | Description |
+|---------|-------------|
+| ✅ Add Record | Input roll number, name, and marks |
+| 📋 Display All | Shows all stored student records |
+| 🔍 Search | Find student by roll number |
+| ✏️ Update | Modify existing student data |
+| 🗑️ Delete | Remove a student record |
+| 💾 Persistence | Data saved in binary file |
 
-Delete Student
+---
 
-Exit
-Enter your choice:
+## 🚀 Future Enhancements
 
+- Input validation for marks and roll numbers
+- Sort students by marks or roll number
+- Export records to CSV format
+- Add more fields (DOB, grade, contact)
 
 ---
 
@@ -104,3 +123,7 @@ Enter your choice:
 A fresher actively learning C, Java, SQL & Web Development, and building projects to strengthen my resume and land my first developer role.
 
 ---
+
+## 📜 License
+
+This project is open source and available for educational purposes.
