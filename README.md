@@ -41,8 +41,6 @@ StudentRecordSystem/
 └── README.md        # documentation
 ```
 
-*(`student.dat` is optional to upload—recommended to ignore it)*
-
 ---
 
 ## 🛠️ How It Works (Short & Simple)
